@@ -8,6 +8,7 @@ screen = pygame.display.set_mode((800, 600))
 
 # Load the player image and set its rect
 player_image = pygame.image.load("player.png")
+player_image = pygame.transform.scale(player_image, (200,200))
 player_rect = player_image.get_rect()
 
 # Set initial player position
